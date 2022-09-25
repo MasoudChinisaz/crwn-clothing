@@ -9,6 +9,11 @@ const buttonStyles = css`
     background-color: white;
     color: black;
     border: 1px solid black;
+    
+  }
+  @media screen and (max-width: 800px) {
+    width: min-content;
+    font-size: 10px
   }
 `;
 
@@ -34,6 +39,10 @@ border: none;
     background-color: #357ae8;
     border: none;
 }
+@media screen and (max-width: 800px) {
+  font-size: 10px
+}
+
 `;
 
 const getButtonStyles = (props) => {
@@ -66,6 +75,9 @@ export const CustomButtonContainer = styled.button`
     background-color: white;
     color: black;
     border: 1px solid black;
+  }
+  @media screen and (max-width: 800px) { 
+   padding: 0;
   }
   
   ${getButtonStyles}
